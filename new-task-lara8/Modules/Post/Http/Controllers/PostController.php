@@ -106,9 +106,9 @@ class PostController extends Controller
     {
         $this->authorize('delete',Post::class);
         $this->postInterface->destroy($request);
-        // return response()->json([
-        //     'status' => 'success',
-        // ]);
+        return response()->json([
+            'status' => 'success',
+        ]);
         
         
     }
